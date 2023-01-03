@@ -1,0 +1,297 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Common */
+a {
+  text-decoration: none;
+}
+
+.btn {
+  display: inline-block;
+  font-weight: 600;
+  min-width: 118px;
+  padding: 0 16px;
+  line-height: 50px;
+  font-size: 1.6rem;
+  text-align: center;
+  color: #ffffff;
+  background: #171100;
+  border-radius: 24.5px;
+}
+
+.content {
+  width: 1170px;
+  max-width: calc(100% - 48px);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.d-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Header */
+.header {
+  background-color: #fffcf4;
+  z-index: 10;
+}
+
+.header.fixed {
+  position: sticky;
+  top: -28px;
+}
+
+.header .body {
+  padding: 36px 0 8px;
+}
+
+.header .nav {
+  margin-left: auto;
+}
+
+.nav .nav-link {
+  position: relative;
+  padding: 8px 21px;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.75;
+  text-align: center;
+  color: #5f5b53;
+}
+
+.nav li.active a,
+.nav .nav-link:hover {
+  text-shadow: 1px 0 0 currentColor;
+  color: #171100;
+}
+
+.nav li.active a::after {
+  position: absolute;
+  content: "";
+  width: 12px;
+  height: 2px;
+  background-color: #171100;
+  border-radius: 1px;
+  left: 21px;
+  bottom: 6px;
+}
+
+.header .sign-up-btn {
+  min-width: 144px;
+  margin-left: 49px;
+}
+
+/* Hero */
+.hero {
+  background-color: #fffcf4;
+}
+.hero .body {
+  display: flex;
+  padding: 64px 0;
+}
+
+.media-block {
+  position: relative;
+  width: 48%;
+}
+
+.hero .media-img {
+  display: block;
+  width: 470px;
+  height: 685px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.hero-sumary {
+  position: absolute;
+  right: 0;
+  bottom: 48px;
+  background: #ffffff;
+  padding: 24px;
+  box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.05);
+  border-radius: 12px;
+}
+
+.hero-sumary .item {
+  display: flex;
+  align-items: center;
+}
+
+.hero-sumary .icon {
+  background-color: #fff9e8;
+  display: flex;
+  padding: 8px;
+  border-radius: 50%;
+}
+
+.hero-sumary .info {
+  margin-left: 16px;
+}
+
+.hero-sumary .label {
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.85;
+  color: #5f5b53;
+}
+
+.hero-sumary .title {
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 1.7;
+  color: #171100;
+}
+
+.content-block {
+  padding-left: 130px;
+  width: 52%;
+}
+
+.heading {
+  font-weight: 700;
+  font-size: 5.8rem;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  color: #171100;
+  font-family: "Sen", sans-serif;
+}
+
+.desc {
+  margin-top: 22px;
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 1.7;
+  color: #5f5b53;
+}
+
+.content .cta {
+  margin: 38px 0 48px;
+  display: flex;
+  align-items: center;
+}
+
+.cta .cta-btn {
+  min-width: 180px;
+  background: #ffb900;
+  border-radius: 32px;
+  font-size: 1.8rem;
+  line-height: 64px;
+}
+
+.cta .cta-watch {
+  display: flex;
+  align-items: center;
+  border: none;
+  background-color: transparent;
+}
+
+.cta .cta-icon {
+  background: #ffffff;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.07);
+  border-radius: 50%;
+  padding: 14px 15px;
+  display: flex;
+  margin-left: 28px;
+  margin-right: 14px;
+}
+
+.cta-watch span {
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 1.7;
+  color: #171100;
+}
+
+.content-block .data {
+  margin-top: 8px;
+  display: flex;
+  align-items: center;
+  column-gap: 28px;
+}
+
+.content-block .data strong {
+  font-weight: 700;
+  font-size: 4.4rem;
+  line-height: 1.2;
+  font-family: "Sen", sans-serif;
+  color: #171100;
+  margin-right: 8px;
+}
+
+/* Popular */
+
+.popular {
+  padding: 64px 0;
+  margin: 136px 0;
+}
+
+.popular-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.popular .info {
+  width: 458px;
+}
+
+.popular .heading {
+  font-size: 3.8rem;
+  line-height: 1.2;
+}
+.popular .desc {
+  margin-top: 16px;
+}
+
+.controls {
+  display: flex;
+  gap: 18px;
+}
+
+.popular .control-btn {
+  background-color: transparent;
+  border: 1px solid #ffb900;
+  color: #ffb900;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.popular .control-btn:hover {
+  color: #fff;
+  background-color: #ffb900;
+  cursor: pointer;
+}
+
+.course-list {
+  display: flex;
+  gap: 30px;
+  margin-top: 55px;
+}
+
+.course-item {
+  flex: 1;
+}
+
+.course-item .thumb {
+  width: 100%;
+  height: 278px;
+  border-radius: 12px 12px 0px 0px;
+  object-fit: cover;
+}
